@@ -216,3 +216,25 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+# Secrets
+.env
+.env.*
+
+# Keep the safe template
+!.env.example
+
+# Python environment
+env/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Acquired repository workspaces
+workspace/
+
+# IDE files
+.vscode/
+.idea/
