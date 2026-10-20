@@ -1,3 +1,4 @@
+
 from pydantic import BaseModel, Field
 
 
@@ -17,6 +18,7 @@ class Finding(BaseModel):
 
 
 class AnalysisResult(BaseModel):
-    """Complete result produced by repository analysis."""
+    """Repository findings and any checks that could not run."""
 
     findings: list[Finding] = Field(default_factory=list)
+    warnings: list[str] = Field(default_factory=list)
